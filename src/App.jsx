@@ -50,8 +50,8 @@ const PAGES = [
 ];
 
 const STATS = [
-  { icon: TrendingUp, prefix: "~KSh ", value: 4, suffix: "B+", decimals: 0, label: "In national government infrastructure and CDF delivery" },
-  { icon: Users, prefix: "", value: 16303, suffix: "", decimals: 0, label: "Votes won in the August 2022 General Election (ODM)" },
+  { icon: TrendingUp, prefix: "~KSh ", value: 800, suffix: "+ M", decimals: 0, label: "In national government infrastructure and CDF delivery" },
+  { icon: Users, prefix: "", value: 16303, suffix: "", decimals: 0, label: "Votes won in the August 2022 General Election" },
   { icon: MapPin, prefix: "", value: 5, suffix: "", decimals: 0, label: "Wards served: Ichuni, Gesusu, Masimba, Kiamokama and Nyamasibi" },
   { icon: HardHat, prefix: "~KSh ", value: 2.3, suffix: "B", decimals: 1, label: "National allocation behind the Keroka–Ibacho–Kiamokama trunk corridor" },
 ];
@@ -73,7 +73,7 @@ const CAREER = [
   {
     year: "2022 – Present",
     title: "Member of Parliament, Nyaribari Masaba",
-    body: "Elected in August 2022 on an ODM ticket with 16,303 votes. Seeking re-election in 2027.",
+    body: "Elected in August 2022 with 16,303 votes. Seeking re-election in 2027.",
   },
 ];
 
@@ -251,18 +251,18 @@ const NEWS = [
   },
   {
     category: "Presidential Tour",
-    date: "Wednesday, November 11, 2026",
-    title: "President Ruto's development tour concludes in Nyaribari Masaba",
-    body: "Day 4 of the President's tour concludes in Nyaribari Masaba on Wednesday, November 11, with development launches including the Keroka–Ibacho–Kiamokama Road Upgrade to Bitumen Standards and the Last Mile Electricity Connectivity Programme, marking a significant milestone in advancing infrastructure development and expanding access to essential services across the constituency.",
+    date: "November 11, 2026 President Welcome Note",
+    title: "President Ruto's development tour welcome by MP Manduku",
+    body: "The area MP sent a welcome note to the Kenyan President in his upcoming Nov. 11 visit. This marks a significant milestone in advancing infrastructure development and expanding access to essential services across the constituency.",
     image: IMG.ruto,
     pos: "50% 50%",
     fit: "contain",
   },
   {
     category: "Community",
-    date: "Rionyonka",
+    date: "Nyaribari Masaba",
     title: "Leaders join Manduku in Rionyonka for empowerment",
-    body: "Leaders joined Dr. Manduku at an empowerment event in Rionyonka.",
+    body: "Leaders joined Dr. Manduku at an empowerment event in the constituency.",
     image: IMG.rionyonka,
     pos: "50% 35%",
   },
@@ -337,8 +337,8 @@ const NEWS = [
 const SOCIALS = {
   xUrl: "https://x.com/danielmandukuMP",
   xHandle: "@danielmandukuMP",
-  facebookUrl: "https://www.facebook.com/p/Hon-Manduku-Daniel-Ogwoka-100088611944238/",
-  facebookName: "Hon Manduku Daniel Ogwoka",
+  tiktokUrl: "https://www.tiktok.com/@hon.daniel.manduku3",
+  tiktokHandle: "@hon.daniel.manduku3",
   campaignUrl: "https://www.facebook.com/p/Dr-Daniel-Ogwoka-Manduku-for-MP-Nyaribari-Masaba-100081207981891/",
   campaignName: "Dr Daniel Ogwoka Manduku for MP Nyaribari Masaba",
 };
@@ -437,6 +437,13 @@ function FacebookIcon(props) {
   return (
     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" {...props}>
       <path d="M13.5 21v-7.5H16l.5-3H13.5V8.4c0-.87.24-1.46 1.5-1.46h1.6V4.35A21 21 0 0 0 14.2 4.2c-2.24 0-3.78 1.37-3.78 3.87V10.5H8v3h2.42V21h3.08z" />
+    </svg>
+  );
+}
+function TikTokIcon(props) {
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" {...props}>
+      <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.1V2h-4.22v13.67a2.78 2.78 0 1 1-2.78-2.78c.29 0 .58.05.85.14V8.72a7.07 7.07 0 1 0 6.15 7V9.02a9.01 9.01 0 0 0 5.26 1.69V6.54c-.5.16-1 .21-1.49.15Z" />
     </svg>
   );
 }
@@ -589,9 +596,9 @@ function MotionHero({ setPage }) {
             </p>
             <h1>Tokore Egasi Amo n' Obwanchani.</h1>
             <p className="hero-sub">
-              Let us work together with love. Visible. Measurable. People-focused. About KSh 4B+ in
-              national government infrastructure and CDF delivery across Nyaribari Masaba, and a
-              2027 re-election bid on the ODM ticket.
+              Let us work together with love. Visible. Measurable. People-focused. About KSh 800+ M
+              in national government infrastructure and CDF delivery across Nyaribari Masaba, and
+              a 2027 re-election bid focused on broad-based development.
             </p>
 
             <div
@@ -712,7 +719,7 @@ function SloganBanner({ setPage }) {
     <section className="section">
       <div className="slogan-banner">
         <div className="slogan-banner-copy">
-          <span className="odm-badge light">ODM</span>
+          <span className="broad-based-badge light">Broad-based</span>
           <h2>Tokore Egasi Amo n' Obwanchani</h2>
           <p>
             Let us work together with love. Elected in August 2022, Dr. Manduku is asking
@@ -758,8 +765,8 @@ function AboutPage() {
           <h2>From architect to Member of Parliament</h2>
           <p>
             Hon. Arch. Dr. Daniel Ogwoka Manduku is the Member of Parliament for Nyaribari Masaba
-            Constituency in Kisii County. He was elected in the August 2022 General Election on an
-            Orange Democratic Movement (ODM) ticket, with 16,303 votes.
+            Constituency in Kisii County. He was elected in the August 2022 General Election with
+            16,303 votes. His approach to service delivery is broad-based and people-focused.
           </p>
           <p>
             A registered architect, he built his career across private practice and public
@@ -1152,8 +1159,8 @@ function ContactPage() {
               <a href={SOCIALS.xUrl} target="_blank" rel="noreferrer">
                 <XIcon /> <span>{SOCIALS.xHandle} on X</span>
               </a>
-              <a href={SOCIALS.facebookUrl} target="_blank" rel="noreferrer">
-                <FacebookIcon /> <span>{SOCIALS.facebookName} (Facebook)</span>
+              <a href={SOCIALS.tiktokUrl} target="_blank" rel="noreferrer">
+                <TikTokIcon /> <span>{SOCIALS.tiktokHandle} (TikTok)</span>
               </a>
               <a href={SOCIALS.campaignUrl} target="_blank" rel="noreferrer">
                 <FacebookIcon /> <span>{SOCIALS.campaignName} (campaign page)</span>
@@ -1296,10 +1303,10 @@ function Footer({ setPage }) {
           <div className="brand-mark small">DM</div>
           <p>
             Hon. Arch. Dr. Daniel Ogwoka Manduku is the Member of Parliament for Nyaribari Masaba
-            Constituency, Kisii County, seeking re-election in 2027 on the ODM ticket.
+            Constituency, Kisii County, focused on broad-based and people-centered development.
           </p>
           <div className="social-row">
-            <a href={SOCIALS.facebookUrl} target="_blank" rel="noreferrer" aria-label="Facebook"><FacebookIcon /></a>
+            <a href={SOCIALS.tiktokUrl} target="_blank" rel="noreferrer" aria-label="TikTok"><TikTokIcon /></a>
             <a href={SOCIALS.xUrl} target="_blank" rel="noreferrer" aria-label="X"><XIcon /></a>
             <a href={SOCIALS.campaignUrl} target="_blank" rel="noreferrer" aria-label="Campaign Facebook page"><FacebookIcon /></a>
           </div>
@@ -1417,8 +1424,8 @@ input,select,textarea{font-family:inherit;}
 .nav-links{display:none;align-items:center;gap:1.3rem;}
 .nav-link{background:none;border:none;font-size:.9rem;color:var(--charcoal-60);padding:.3rem 0;border-bottom:2px solid transparent;}
 .nav-link.active{color:var(--navy-900);border-color:var(--orange-500);}
-.odm-badge{background:var(--navy-900);color:#fff;font-size:.7rem;font-weight:700;letter-spacing:.04em;padding:.35rem .7rem;border-radius:999px;border:1px solid var(--orange-500);}
-.odm-badge.light{background:var(--orange-500);color:var(--navy-950);border:none;display:inline-block;}
+.broad-based-badge{background:var(--navy-900);color:#fff;font-size:.7rem;font-weight:700;letter-spacing:.04em;padding:.35rem .7rem;border-radius:999px;border:1px solid var(--orange-500);}
+.broad-based-badge.light{background:var(--orange-500);color:var(--navy-950);border:none;display:inline-block;}
 .hamburger{background:none;border:none;color:var(--navy-900);}
 .nav-mobile{max-height:0;overflow:hidden;transition:max-height .35s ease;background:var(--paper);border-bottom:1px solid var(--line);}
 .nav-mobile.open{max-height:460px;}
